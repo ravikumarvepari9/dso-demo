@@ -50,7 +50,7 @@ pipeline {
 	  steps {
 	    container('kaniko') {
 	      sh '/kaniko/executor -f `pwd`/Dockerfile -c `pwd` --insecure --
-skip-tls-verify --cache=true --destination=docker.io/xxxxxx/dso-demo'
+skip-tls-verify --cache=true --destination=docker.io/ravikumar/dso-demo'
 	    }
           }
 	}
