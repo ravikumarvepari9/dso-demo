@@ -9,4 +9,4 @@ RUN mvn package -DskipTests && \
 
 EXPOSE 8080
 
-CMD java  -jar /run/demo.jar
+CMD ["java", "-jar",  "/run/demo.jar"]
